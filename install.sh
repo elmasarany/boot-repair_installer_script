@@ -7,7 +7,7 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-(pkg -i python-gi* &&
+(dpkg -i python-gi* &&
 dpkg -i glade2script* &&
 dpkg -i boot-sav_* &&
 dpkg -i boot-sav-* &&
